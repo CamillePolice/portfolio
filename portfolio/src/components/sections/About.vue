@@ -13,9 +13,10 @@ defineProps({
       <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
       <div class="max-w-3xl mx-auto">
         <p class="text-lg text-gray-700 mb-6">
-          After three enriching years as a fullstack developer at ITLink, I am now seeking a new
-          professional opportunity. I am particularly motivated to work on projects that integrate
-          the latest frameworks to evolve and tackle new technical challenges.
+          Passionate about cutting-edge technologies and quality-driven development, I thrive on creating robust
+          solutions as a Full-Stack Developer. My expertise spans CI/CD pipelines with GitLab CI and Terraform, while my
+          experience as a Lead Developer has honed my skills in TypeScript, Vue 3, Symfony and Angular. I take pride in writing
+          comprehensive tests and implementing best practices across all projects.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           <div>
@@ -23,15 +24,15 @@ defineProps({
             <ul class="space-y-3">
               <li class="flex items-center space-x-2">
                 <span class="text-purple-600">🎾</span>
-                <span>Tennis (Ranked 5/6)</span>
+                <span>Tennis, currently 15/2 (previous ranked 5/6)</span>
               </li>
               <li class="flex items-center space-x-2">
                 <span class="text-purple-600">🎮</span>
-                <span>League of Legends (Diamond since 2021)</span>
+                <span>League of Legends player (Diamond rank since 2021) and competitor with team ATAT</span>
               </li>
               <li class="flex items-center space-x-2">
                 <span class="text-purple-600">✈️</span>
-                <span>Traveled to 15+ countries</span>
+                <span>Traveled to South Korea, Mexico, Cuba, Egypt, Germany, United States, Morocco, Bahamas, Cabo verde, Jamaïca, Viet-Nam, Italia, Scotland, England, Poland</span>
               </li>
             </ul>
           </div>
