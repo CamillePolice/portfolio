@@ -14,10 +14,13 @@ const jobs = [
     location: 'Rennes',
     responsibilities: [
       'Development of Angular/Symfony websites',
+      'Embedded Vue3',
       'Web project architecture',
       'Creation of map files',
       'Management of microservices',
-      'CI/CD management (Jenkins)'
+      'CI/CD management (Jenkins)',
+      'Architectur',
+      'Lead Dev'
     ]
   },
   {
@@ -40,7 +43,26 @@ const jobs = [
     period: 'June 2021 – July 2021',
     location: 'Rennes',
     responsibilities: [
-      'Development of websites using the Drupal8 CMS'
+      'Development of websites using the Drupal8 CMS',
+      'Handling ticket backlog'
+    ]
+  },
+  {
+    title: 'Consultant Engineer',
+    company: 'Open',
+    period: 'September 2019 – July 2020',
+    location: 'Rennes',
+    responsibilities: [
+      'Development of websites using the Drupal8 CMS',
+    ]
+  },
+  {
+    title: 'Consultant Engineer',
+    company: 'Orange Labs',
+    period: '11 weeks',
+    location: 'Rennes',
+    responsibilities: [
+      'Creation of an automatic documentation generation tool based on Sphinx for Python projects within the DIESE team',
     ]
   }
 ]
@@ -49,7 +71,7 @@ const jobs = [
 <template>
   <section :id="id" class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-12 text-center">Experience</h2>
+      <h2 class="text-4xl font-bold mb-12 text-center">Experiences</h2>
       <div class="max-w-4xl mx-auto space-y-12">
         <div v-for="(job, index) in jobs" :key="index" class="bg-white p-6 rounded-lg shadow-sm">
           <div class="flex justify-between items-start mb-4">
