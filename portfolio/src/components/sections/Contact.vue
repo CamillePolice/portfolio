@@ -34,7 +34,6 @@ defineProps({
             </svg>
             <div class="flex space-x-4">
               <a href="https://github.com/CamillePolice" target="_blank" class="text-purple-600 hover:text-purple-800">GitHub</a>
-              <a href="https://gitlab.com/CamillePolice" target="_blank" class="text-purple-600 hover:text-purple-800">GitLab</a>
             </div>
           </div>
         </div>
