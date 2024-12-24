@@ -10,6 +10,7 @@ const jobs = [
   {
     title: 'Consultant Engineer',
     company: 'ITLink',
+    url: "https://www.itlink.fr/",
     period: 'September 2021 – Present',
     location: 'Rennes',
     responsibilities: [
@@ -26,6 +27,7 @@ const jobs = [
   {
     title: 'Entrepreneurship - FullStack Developer',
     company: 'Asheal',
+    url: "https://www.linkedin.com/company/asheal/",
     period: 'October 2021 – Present',
     location: 'Rennes',
     responsibilities: [
@@ -40,6 +42,7 @@ const jobs = [
   {
     title: 'Consultant Engineer',
     company: 'Open',
+    url: "https://www.open.global/",
     period: 'June 2021 – July 2021',
     location: 'Rennes',
     responsibilities: [
@@ -50,6 +53,7 @@ const jobs = [
   {
     title: 'Consultant Engineer',
     company: 'Open',
+    url: "https://www.open.global/",
     period: 'September 2019 – July 2020',
     location: 'Rennes',
     responsibilities: [
@@ -59,6 +63,7 @@ const jobs = [
   {
     title: 'Consultant Engineer',
     company: 'Orange Labs',
+    "url": "https://www.orange.com/en/home",
     period: '11 weeks',
     location: 'Rennes',
     responsibilities: [
@@ -77,7 +82,9 @@ const jobs = [
           <div class="flex justify-between items-start mb-4">
             <div>
               <h3 class="text-xl font-semibold">{{ job.title }}</h3>
-              <p class="text-purple-600">{{ job.company }}</p>
+              <p class="text-purple-600">
+                <a :href="job.url" target="_blank" class="hover:underline">{{ job.company }}</a>
+              </p>
             </div>
             <div class="text-right">
               <p class="text-gray-600">{{ job.period }}</p>
