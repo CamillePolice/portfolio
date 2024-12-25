@@ -247,28 +247,28 @@ const projects = [
           <h3 class="text-xl font-semibold mb-3 text-gray-800 pr-24">{{ project.title }}</h3>
           <p class="text-gray-600 mb-4">{{ project.description.overview }}</p>
 
-          <template v-if="project.description.versions">
+            <template v-if="project.description.versions">
             <div v-for="version in project.description.versions" :key="version.title" class="mb-6">
               <h4 class="font-medium text-gray-800 text-lg mb-3">{{ version.title }}</h4>
               <div class="bg-gray-50 p-4 rounded-lg mb-3">
-                <div class="grid grid-cols-2 gap-4">
-                  <div>
-                    <div class="text-sm text-gray-500 mb-1">Frontend</div>
-                    <div class="font-medium text-gray-800">{{ version.frontend.name }}</div>
-                    <div class="text-sm text-gray-600">({{ version.frontend.tech }})</div>
-                  </div>
-                  <div v-if="version.backend" class="text-right">
-                    <div class="text-sm text-gray-500 mb-1">Backend</div>
-                    <div class="font-medium text-gray-800">{{ version.backend.name }}</div>
-                    <div class="text-sm text-gray-600">({{ version.backend.tech }})</div>
-                  </div>
+              <div class="grid grid-cols-2 gap-4" :class="{'justify-center': !version.backend}">
+                <div :class="{'col-span-2 text-center': !version.backend}">
+                <div class="text-sm text-gray-500 mb-1">Front</div>
+                <div class="font-medium text-gray-800">{{ version.frontend.name }}</div>
+                <div class="text-sm text-gray-600">({{ version.frontend.tech }})</div>
+                </div>
+                <div v-if="version.backend" class="text-right">
+                <div class="text-sm text-gray-500 mb-1">Back</div>
+                <div class="font-medium text-gray-800">{{ version.backend.name }}</div>
+                <div class="text-sm text-gray-600">({{ version.backend.tech }})</div>
                 </div>
               </div>
+              </div>
               <ul class="list-disc list-inside text-gray-600 space-y-1 ml-2">
-                <li v-for="feature in version.features" :key="feature">{{ feature }}</li>
+              <li v-for="feature in version.features" :key="feature">{{ feature }}</li>
               </ul>
             </div>
-          </template>
+            </template>
 
           <template v-if="project.description.features">
             <ul class="list-disc list-inside mb-4 text-gray-600 space-y-2">
