@@ -44,7 +44,7 @@ const projects = [
         }
       ]
     },
-    technologies: ['Vue3', 'Go', 'TypeScript', 'Docker', 'Terraform', 'Devcontainer'],
+    technologies: ['Docker', 'Terraform', 'Devcontainer'],
     badge: 'Professional'
   },
   {
@@ -78,6 +78,19 @@ const projects = [
     title: 'Vigicrues - Official Flood Warning Service',
     description: {
       overview: 'France\'s official flood warning service website (vigicrues.gouv.fr), operated by SCHAPI.',
+      versions: [
+        {
+          title: 'Stack',
+          frontend: {
+            name: 'Angular',
+            tech: 'TypeScript'
+          },
+          backend: {
+            name: 'Symfony',
+            tech: 'PHP'
+          }
+        }
+      ],
       features: [
         'Real-time monitoring of flood risks across French rivers',
         'Color-coded alert system (green, yellow, orange, red)',
@@ -85,13 +98,26 @@ const projects = [
         'Public information dashboard'
       ]
     },
-    technologies: ['Angular', 'Symfony'],
+    technologies: ['Map handling'],
     badge: 'Professional'
   },
   {
     title: 'Transport Synoptic',
     description: {
       overview: 'Interactive horizontal synoptic display system for tracking public transport vehicles in real-time.',
+      versions: [
+        {
+          title: 'Stack',
+          frontend: {
+            name: 'Vue3',
+            tech: 'TypeScript'
+          },
+          backend: {
+            name: 'ExpressJS',
+            tech: 'JavaScript'
+          }
+        }
+      ],
       features: [
         'Real-time vehicle position tracking',
         'Horizontal scrolling synoptic view',
@@ -99,13 +125,22 @@ const projects = [
         'Live status updates'
       ]
     },
-    technologies: ['Vue3', 'TypeScript', 'WebSockets', 'Canvas drawning', 'Embedded Vue3'],
+    technologies: ['WebSockets', 'Canvas drawning', 'Embedded Vue3'],
     badge: 'Professional'
   },
   {
     title: 'Music Player',
     description: {
       overview: 'A Spotify-inspired music player built with Vue3 and Nuxt.',
+      versions: [
+        {
+          title: 'Stack',
+          frontend: {
+            name: 'Vue3',
+            tech: 'TypeScript'
+          }
+        }
+      ],
       features: [
         'Play/pause/stop functionality',
         'Interactive timeline slider',
@@ -114,13 +149,22 @@ const projects = [
         'State management for player controls'
       ]
     },
-    technologies: ['Vue3', 'Nuxt', 'TypeScript', 'Tailwind', 'PrimeVue'],
+    technologies: ['Nuxt', 'Tailwind', 'PrimeVue'],
     badge: 'Personal'
   },
   {
     title: 'YokaiNoMori - Chess Game',
     description: {
       overview: 'An Android implementation of YokaiNoMori, a simplified chess variant designed for children.',
+      versions: [
+        {
+          title: 'Stack',
+          frontend: {
+            name: 'Android SDK',
+            tech: 'Java'
+          }
+        }
+      ],
       features: [
         'Intuitive touch-based game interface',
         'Simplified chess rules for children',
@@ -129,13 +173,22 @@ const projects = [
         'Move validation system'
       ]
     },
-    technologies: ['Java', 'Android SDK', 'XML'],
+    technologies: ['Android SDK', 'Mobile Development'],
     badge: 'Personal'
   },
   {
     title: 'Bomberman Like',
     description: {
       overview: 'A 3D Bomberman-like game built with C++ and Irrlicht engine.',
+      versions: [
+        {
+          title: 'Stack',
+          frontend: {
+            name: 'Irrlicht 3D',
+            tech: 'C++'
+          }
+        }
+      ],
       features: [
         'Real-time 3D gameplay mechanics',
         'Player vs Player combat',
@@ -144,13 +197,22 @@ const projects = [
         'Collision detection'
       ]
     },
-    technologies: ['C++', 'Irrlicht', '3D Graphics'],
+    technologies: ['Game Design', '3D Graphics'],
     badge: 'Personal'
   },
   {
     title: 'Secret Santa Organizer',
     description: {
       overview: 'Automated gift exchange organizer using Python and SMTP email system.',
+      versions: [
+        {
+          title: 'Stack',
+          frontend: {
+            name: 'Flask',
+            tech: 'Python'
+          }
+        }
+      ],
       features: [
         'Random assignment algorithm',
         'Automated email notifications',
@@ -159,7 +221,7 @@ const projects = [
         'Configurable exclusion rules'
       ]
     },
-    technologies: ['Python', 'SMTP', 'Email Automation'],
+    technologies: ['SMTP', 'Email Automation'],
     badge: 'Personal'
   },
 ]
@@ -195,7 +257,7 @@ const projects = [
                     <div class="font-medium text-gray-800">{{ version.frontend.name }}</div>
                     <div class="text-sm text-gray-600">({{ version.frontend.tech }})</div>
                   </div>
-                  <div>
+                  <div v-if="version.backend" class="text-right">
                     <div class="text-sm text-gray-500 mb-1">Backend</div>
                     <div class="font-medium text-gray-800">{{ version.backend.name }}</div>
                     <div class="text-sm text-gray-600">({{ version.backend.tech }})</div>
