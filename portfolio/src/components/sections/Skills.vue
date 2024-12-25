@@ -9,43 +9,31 @@ defineProps({
 const languages = ['C', 'C++', 'Java', 'TypeScript/JavaScript', 'GO', 'Python', 'PHP']
 const frameworks = ['Angular', 'Symfony', 'Gin', 'Drupal', 'Vue3 (Nuxt)']
 const otherSkills = ['Tech Lead', 'Project Management', 'Communication', 'CI/CD', 'Microservices', 'Building Devcontainer', 'Pro VSCode']
+
+const skillSections = [
+  { title: 'Languages', skills: languages, bgColor: 'bg-purple-100', textColor: 'text-purple-700' },
+  { title: 'Frameworks', skills: frameworks, bgColor: 'bg-blue-100', textColor: 'text-blue-700' },
+  { title: 'Other Skills', skills: otherSkills, bgColor: 'bg-green-100', textColor: 'text-green-700' }
+]
 </script>
 
 <template>
-  <section :id="id" class="py-20 bg-white">
+  <section :id="id" class="py-20 bg-gradient-to-b from-gray-50 to-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-12 text-center">Skills</h2>
-      <div class="max-w-4xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="space-y-6">
-            <h3 class="text-xl font-semibold mb-4 text-center">Languages</h3>
-            <div class="flex flex-wrap gap-2 justify-center">
-              <span v-for="lang in languages" :key="lang"
-                class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full">
-                {{ lang }}
-              </span>
-            </div>
-          </div>
-
-          <div class="space-y-6">
-            <h3 class="text-xl font-semibold mb-4 text-center">Frameworks</h3>
-            <div class="flex flex-wrap gap-2 justify-center">
-              <span v-for="framework in frameworks" :key="framework"
-                class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full">
-                {{ framework }}
-              </span>
-            </div>
+      <h2 class="text-5xl font-bold mb-16 text-center text-gray-800">Skills</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <div v-for="section in skillSections" :key="section.title" class="space-y-4">
+          <h3 class="text-2xl font-semibold text-center">{{ section.title }}</h3>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <span
+              v-for="skill in section.skills"
+              :key="skill"
+              :class="[section.bgColor, section.textColor, 'px-4 py-2 rounded-lg font-medium shadow-sm transition-transform hover:scale-105']"
+            >
+              {{ skill }}
+            </span>
           </div>
         </div>
-        <div class="max-w-lg mx-auto mt-8 space-y-6">
-            <h3 class="text-xl font-semibold mb-4 text-center">Other Skills</h3>
-            <div class="flex flex-wrap gap-2 justify-center">
-              <span v-for="skill in otherSkills" :key="skill"
-                class="px-3 py-1 bg-green-100 text-green-700 rounded-full">
-                {{ skill }}
-              </span>
-            </div>
-          </div>
       </div>
     </div>
   </section>
