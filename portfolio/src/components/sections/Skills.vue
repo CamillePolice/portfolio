@@ -7,7 +7,7 @@ defineProps({
 })
 
 const languages = ['C', 'C++', 'Java', 'TypeScript/JavaScript', 'GO', 'Python', 'PHP']
-const frameworks = ['Angular', 'Symfony', 'Gin', 'Drupal', 'Vue3 (Nuxt)']
+const frameworks = ['Angular', 'Symfony', 'Gin', 'Drupal', 'Vue3 (Nuxt)', 'React', 'Next.js', 'ExpressJS']
 const otherSkills = ['Tech Lead', 'Project Management', 'Communication', 'CI/CD', 'Microservices', 'Building Devcontainer', 'Pro VSCode']
 
 const skillSections = [

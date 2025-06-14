@@ -30,12 +30,12 @@ const projects = [
         {
           title: 'Second Version (In Development)',
           frontend: {
-            name: 'Vue3/Nuxt',
+            name: 'Vue3/Nuxt/React',
             tech: 'TypeScript'
           },
           backend: {
-            name: 'Gin Framework',
-            tech: 'Golang'
+            name: 'Gin Framework/NestJS',
+            tech: 'Golang/TypeScript'
           },
           features: [
             'Improved architecture based on v1 learnings',
@@ -45,6 +45,32 @@ const projects = [
       ]
     },
     technologies: ['Docker', 'Terraform', 'Devcontainer'],
+    badge: 'Professional'
+  },
+  {
+    title: 'Lynksee',
+    description: {
+      overview: 'Developed at ITLink, software to assist ophthalmic surgeons in their daily work.',
+      versions: [
+        {
+          title: 'Stack',
+          frontend: {
+            name: 'Vue3',
+            tech: 'TypeScript'
+          },
+          backend: {
+            name: 'ExpressJS',
+            tech: 'TypeScript'
+          }
+        }
+      ],
+      features: [
+        'Microservices architecture',
+        'Devcontainer building',
+        'Architecture'
+      ]
+    },
+    technologies: ['MongoDB', 'NoSql', 'MikroORM', 'CI/CD'],
     badge: 'Professional'
   },
   {

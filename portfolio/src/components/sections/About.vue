@@ -15,7 +15,7 @@ defineProps({
         <p class="text-lg text-gray-700 mb-6">
           Passionate about cutting-edge technologies and quality-driven development, I thrive on creating robust
           solutions as a Full-Stack Developer. My expertise spans CI/CD pipelines with GitLab CI and Terraform, while my
-          experience as a Lead Developer has honed my skills in TypeScript, Vue 3, Symfony and Angular. I take pride in writing
+          experience as a Lead Developer has honed my skills in TypeScript, Vue 3, React, Symfony and Angular. I take pride in writing
           comprehensive tests and implementing best practices across all projects.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
@@ -28,7 +28,7 @@ defineProps({
               </li>
               <li class="flex items-center space-x-2">
                 <span class="text-purple-600">🎮</span>
-                <span>League of Legends player (Diamond rank since 2021) and competitor with team ATAT</span>
+                <span>League of Legends player (Master) and competitor with team ATAT</span>
               </li>
               <li class="flex items-center space-x-2">
                 <span class="text-purple-600">✈️</span>
